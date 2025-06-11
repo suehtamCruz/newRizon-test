@@ -1,11 +1,12 @@
-.list-container {
+.new-contact {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding: 64px;
   h1 {
     color: #fff;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .new-contact-container {
@@ -15,11 +16,14 @@
     flex-direction: column;
     gap: 16px;
     padding: 12px;
+    margin: 0 auto;
     width: 500px;
 
     .new-contact-button {
       align-items: center;
       background-color: #000;
+      border-radius: 8px;
+      border: none;
       color: #fff;
       cursor: pointer;
       display: flex;
@@ -36,7 +40,12 @@
   }
   @media screen and (max-width: 768px) {
     .new-contact-container {
-      width: 100%;
+      width: 300px;
     }
+  }
+}
+@media screen and (max-width: 768px) {
+  .new-contact {
+    padding: 24px;
   }
 }

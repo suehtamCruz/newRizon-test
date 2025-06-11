@@ -17,9 +17,10 @@ export class ContactsService {
 
   removeContact(contact: ContactModel) {
     this._contacts.update((contacts) => {
-      contacts.findIndex(
+      const index = contacts.findIndex(
         (c) => c.name.trim().toLowerCase() === contact.name.trim().toLowerCase()
       );
+      contacts.splice(index, 1);
       return contacts;
     });
   }

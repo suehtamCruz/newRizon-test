@@ -6,12 +6,15 @@
       <span>Nome: {{ contact.name }}</span>
       <span>Telefone: {{ contact.phone }}</span>
       <span>Email: {{ contact.email || " -- " }}</span>
+      <mat-icon class="icon" (click)="removeContact(contact)">delete_sweep</mat-icon>
     </div>
   </article>
 
   <ng-template #emptyState>
-    <h4>Nenhum contato cadastrado</h4>
+    <section class="empty-state">
+      <h4>Nenhum contato cadastrado</h4>
 
-    <button (click)="navigateToNewContact()">Cadastre um novo contato</button>
+      <button (click)="navigateToNewContact()">Cadastre um novo contato</button>
+    </section>
   </ng-template>
 </main>

@@ -1,4 +1,19 @@
 
+// Custom Theming for Angular Material
+// For more information: https://material.angular.dev/guide/theming
+@use '@angular/material' as mat;
+
+html {
+  @include mat.theme((
+    color: (
+      theme-type: light,
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}
 * {
     margin: 0;
     overflow: hidden;
@@ -6,10 +21,18 @@
 
 body {
     background-color: #3e3e3e;
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
 }
 
 input {
     height: 40px;
     border-radius: 8px;
     color: #252525;
+    padding: 0 12px;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
