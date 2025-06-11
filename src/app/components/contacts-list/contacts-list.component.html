@@ -1,0 +1,17 @@
+<main class="list-container">
+  <h1>Listágem de contatos</h1>
+
+  <article class="list" *ngIf="allContacts?.length; else emptyState">
+    <div *ngFor="let contact of allContacts" class="item">
+      <span>Nome: {{ contact.name }}</span>
+      <span>Telefone: {{ contact.phone }}</span>
+      <span>Email: {{ contact.email || " -- " }}</span>
+    </div>
+  </article>
+
+  <ng-template #emptyState>
+    <h4>Nenhum contato cadastrado</h4>
+
+    <button (click)="navigateToNewContact()">Cadastre um novo contato</button>
+  </ng-template>
+</main>

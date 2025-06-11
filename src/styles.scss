@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: #3e3e3e;
+}
+
+input {
+    height: 40px;
+    border-radius: 8px;
+    color: #252525;
+}

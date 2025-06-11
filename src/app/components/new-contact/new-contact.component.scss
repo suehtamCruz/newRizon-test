@@ -1,0 +1,42 @@
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .new-contact-container {
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 12px;
+    width: 500px;
+
+    .new-contact-button {
+      align-items: center;
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      font-size: 16px;
+      justify-content: center;
+      padding: 12px;
+      width: 100%;
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .new-contact-container {
+      width: 100%;
+    }
+  }
+}

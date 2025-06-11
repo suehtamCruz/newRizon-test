@@ -1,0 +1,30 @@
+<main class="list-container">
+  <h1>Novo contato</h1>
+
+  <article class="new-contact-container" [formGroup]="form">
+    <input
+      type="text"
+      class="new-contact-input"
+      id="name"
+      placeholder="Nome novo contato"
+      formControlName="name"
+    />
+    <input
+      type="text"
+      class="new-contact-input"
+      id="phone"
+      mask="(99) 9999-9999||(99) 9 9999-9999"
+      formControlName="phone"
+    />
+    <input
+      type="text"
+      class="new-contact-input"
+      name="email"
+      placeholder="email@email.com"
+      id="email"
+      formControlName="email"
+    />
+
+    <button class="new-contact-button" (click)="addNewContact()">Cadastrar</button>
+  </article>
+</main>

@@ -1,0 +1,23 @@
+.list-container {
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    color: #fff;
+  }
+
+  .list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    .item {
+      border-radius: 8px;
+      background-color: #fff;
+      padding: 12px;
+    }
+  }
+ 
+}
