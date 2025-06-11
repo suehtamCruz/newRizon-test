@@ -10,6 +10,7 @@ Um aplicativo web moderno para gerenciamento de contatos desenvolvido com Angula
 - Angular Material
 - NgxMask
 - SweetAlert2
+- Jest (Testes unitários)
 
 ## 📋 Pré-requisitos
 
@@ -33,6 +34,31 @@ cd test
 ```bash
 npm install
 ```
+
+## 🧪 Testes
+
+O projeto utiliza Jest para testes unitários. Os testes cobrem os principais componentes e funcionalidades:
+
+- Testes de formulário e validações
+- Testes de navegação
+- Testes de integração com serviços
+- Testes de manipulação de contatos
+- Testes de confirmações e modais
+
+Para executar os testes:
+
+```bash
+# Executar todos os testes
+npm test
+
+# Executar testes em modo watch
+npm run test:watch
+
+# Executar testes com cobertura
+npm run test:coverage
+```
+
+Os arquivos de teste estão localizados junto aos seus componentes com a extensão `.spec.ts`.
 
 ## 💻 Executando o Projeto
 
